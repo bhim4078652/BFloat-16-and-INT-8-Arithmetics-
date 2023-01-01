@@ -17,7 +17,6 @@ Bfloat16 has a greater dynamic range—i.e., number of exponent bits—than FP16
 
 ## Addition_and_subtraction Algorithm 
 steps :
-
 1) Align binary points - Shift number with smaller exponent.
 2) Add or subtract the significands.
 3) Normalize result & check for over/underflow.
@@ -26,4 +25,12 @@ steps :
       ![App Screenshot](https://github.com/bhim4078652/BFloat-16-and-INT-8-Arithmetics-/blob/main/REQ_IMAGES/p2.jpg)
 
 
+## multiplication Algorithm 
+steps:
+1) Add exponents.
+2) Multiply significands.
+3) Normalize result & check for over/underflow
+4) Round and renormalize if necessary.
+5) Determine sign: +ve × –ve  –ve.
 
+      ![App Screenshot](https://github.com/bhim4078652/BFloat-16-and-INT-8-Arithmetics-/blob/main/REQ_IMAGES/p3.png)
