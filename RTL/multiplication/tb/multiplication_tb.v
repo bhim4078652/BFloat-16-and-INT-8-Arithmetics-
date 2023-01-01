@@ -20,32 +20,32 @@ begin
 	 rst=0;
 	 
 	 #3
-    a=16'h3fc0; // 1.5
-	 b=16'hbfc0; // -1.5 expected result = 0xc010
+         a=16'h3fc0; 
+	 b=16'hbfc0; 
 	 
 	 #10 
-	 a=16'h40C8; // 6.25
-	 b=16'h41EE; // 29.75 expected result = 0x433a
+	 a=16'h40C8; 
+	 b=16'h41EE; 
 	 
 	 #10
 	 
-	 a=16'h3f48; // 99.5
-	 b=16'h3fa4; // 0 expected result = 0x0000
+	 a=16'h3f48; 
+	 b=16'h3fa4; 
 	 
 	 #10
 	 
 	 a=16'b00000000_11111011;
-	 b=16'b00000000_11111010; //-5*-6=30;
+	 b=16'b00000000_11111010; 
 	 
 	 #10
 	 
 	 a=16'h00E4;
-	 b=16'h0006; // underflow case
+	 b=16'h0006; 
 	 
 	 #10
 	 
 	 a=16'h000E;
-	 b=16'h000A; // overflow case
+	 b=16'h000A; 
 	 
 	 #20
 	 $finish;
