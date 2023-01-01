@@ -15,3 +15,15 @@ Bfloat16 is a custom 16-bit floating point format for machine learning that’s 
 
 Bfloat16 has a greater dynamic range—i.e., number of exponent bits—than FP16. In fact, the dynamic range of bfloat16 is identical to that of FP32.The bfloat16 format works as well as the FP32 format while delivering increased performance and reducing memory usage.
 
+## Addition_and_subtraction Algorithm 
+steps :
+
+1) Align binary points - Shift number with smaller exponent.
+2) Add or subtract the significands.
+3) Normalize result & check for over/underflow.
+4) Round and renormalize if necessary.
+
+ ![App Screenshot](https://github.com/bhim4078652/BFloat-16-and-INT-8-Arithmetics-/blob/main/REQ_IMAGES/p2.jpg)
+
+
+
