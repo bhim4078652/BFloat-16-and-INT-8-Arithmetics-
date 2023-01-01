@@ -23,7 +23,7 @@ steps :
 3) Normalize result & check for over/underflow.
 4) Round and renormalize if necessary.
 
- ![App Screenshot](https://github.com/bhim4078652/BFloat-16-and-INT-8-Arithmetics-/blob/main/REQ_IMAGES/p2.jpg)
+      ![App Screenshot](https://github.com/bhim4078652/BFloat-16-and-INT-8-Arithmetics-/blob/main/REQ_IMAGES/p2.jpg)
 
 
 
