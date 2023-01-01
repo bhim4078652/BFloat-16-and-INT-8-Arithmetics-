@@ -21,17 +21,17 @@ begin
 	 rst=0;
 	 
 	 #3
-    a=16'h3e80; // 2.5
-	 b=16'h4489; // 1 expected result = 0xc010
+         a=16'h3e80; 
+	 b=16'h4489; 
 	 
 	 #10 
-	 a=16'h4108; // 6.25
-	 b=16'h42dd; // 29.75 expected result = 0x433a
+	 a=16'h4108; 
+	 b=16'h42dd; 
 	 
 	 #10
 	 
-	 a=16'h3fa0; // 1
-	 b=16'h5af0; // 0.5 expected result = 0x0000
+	 a=16'h3fa0; 
+	 b=16'h5af0; 
 	 
 	 #20
 	 $finish;
