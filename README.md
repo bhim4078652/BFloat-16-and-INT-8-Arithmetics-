@@ -25,12 +25,28 @@ steps :
       ![App Screenshot](https://github.com/bhim4078652/BFloat-16-and-INT-8-Arithmetics-/blob/main/REQ_IMAGES/p2.jpg)
 
 
-## multiplication Algorithm 
+## Multiplication Algorithm 
 steps:
 1) Add exponents.
 2) Multiply significands.
 3) Normalize result & check for over/underflow
 4) Round and renormalize if necessary.
-5) Determine sign: +ve × –ve  –ve.
+5) Determine sign: +ve × –ve => –ve.
 
       ![App Screenshot](https://github.com/bhim4078652/BFloat-16-and-INT-8-Arithmetics-/blob/main/REQ_IMAGES/p3.png)
+
+## Division Algorithm 
+    Intial Seed : x0 = 48/17 - (32/17)*D
+    where D - Divisor B adjusted to fit 0.5-1 range by replacing the exponent field with 8'd126
+    
+    Newton Raphson Iterations :
+                  x1 = x0*(2-D*x0)
+                  x2 = x1*(2-D*x1)
+                  x3 = x2*(2-D*x2)
+                  
+    x3 - Reciprocal of Adusted value D.
+    
+    Adjust the exponents to produce the final reciprocal of B 
+    
+    1/B : {B[15],x3[14:7]+8'd126-B[14:7],x3[6:0]}
+    Result =  A*1/B
